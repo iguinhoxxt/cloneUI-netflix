@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url(../img/background-netflix.jpg);
+  background-image: cover;
+  background-repeat: no-repeat;
+  font-family: helvetica neue, arial, sans-serif;
+}
+
+body::before {
+  content: "";
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo img {
+  width: 45px;
+  width: 177px;
+}
+
+.header {
+  padding: 20px 50px;
+  position: relative;
+  z-index: 10;
+  border-bottom: transparent;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5) 0,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.login-body {
+  padding: 60px;
+  z-index: 90;
+  position: relative;
+  max-width: 450px;
+  height: 650px;
+  margin-left: 50%;
+  background-color: rgb(0, 0, 0, 0.75);
+  border-radius: 4px;
+  transform: translateX(-50%);
+}
+
+.login-body h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.login-body input {
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.login-body input:hover {
+  background-color: #444;
+}
+
+.input-box {
+  margin-bottom: 25px;
+}
+
+.remember input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+  height: 13px;
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.remember span {
+  color: #b3b3b3;
+}
+
+.input-box input[type="submit"] {
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  background-color: #e50914;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  margin: 24px 0 12px;
+  cursor: pointer;
+}
+
+.input-box input[type="submit"]:hover {
+  background-color: #ca0e17;
+}
+
+.input-box input::placeholder {
+  font-size: 16px;
+  color: #8c8c8c;
+}
+
+.support {
+  display: flex;
+  color: #b3b3b3;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.support input {
+  width: 15px;
+  height: 15px;
+}
+
+.remember {
+  color: #b3b3b3;
+  display: flex;
+  align-items: center;
+}
+
+.remember span {
+  color: #737373;
+  font-size: 15px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+  height: 25px;
+}
+
+.help a {
+  text-decoration: none;
+  color: #737373;
+  margin-top: -20px;
+  font-weight: 500;
+}
+
+.help a:hover {
+  text-decoration: underline;
+}
+
+.login-facebook {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+  color: #4267b2;
+}
+
+.login-facebook span {
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.login-facebook span a {
+  text-decoration: none;
+  color: #737373;
+}
+
+.login-facebook img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.sign-up {
+  color: #737373;
+  font-size: 16px;
+}
+
+.sign-up a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+}
+
+.terms {
+  color: #737373;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.terms a {
+  text-decoration: none;
+  color: #0071eb;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.site-footer-wrapper {
+  min-width: 190px;
+  width: 100%;
+  margin-top: 0;
+  padding-bottom: 20px;
+  font-size: 1em;
+  color: #757575;
+  position: relative;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.footer-site {
+  max-width: 70%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+.footer-top {
+  padding: 0;
+  margin: 0 0 30px;
+  margin-right: 500px;
+}
+
+.footer-site .footer-top a {
+  margin: 1rem auto;
+  color: #757575;
+  text-decoration: none;
+}
+
+.footer-site .footer-top a:hover {
+  text-decoration: underline;
+}
+
+.footer-top {
+  padding: 0;
+  margin: 0 0 30px;
+  padding-top: 40px;
+}
+
+.footer-links ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.footer-links li {
+  font-size: 13px;
+  list-style: none;
+  line-height: 1.5;
+}
+
+.footer-links li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.lang-selection-container {
+  padding-right: 26px;
+  padding: 20px;
+  border: 1px solid red;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #333;
+  width: 155px;
+  margin-top: 20px;
+  cursor: default;
+  font-size: 13px;
+}
+
+.lang-selection-container i {
+  margin-right: 10px;
+}
