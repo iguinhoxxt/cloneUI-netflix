@@ -17,5 +17,5 @@ This project is under the MIT license. See the file LISENSE for more details.
 <img src="./assets/img/preview.png">
 
 <h1 align="center">
-<a href="netflix-br.netlify.app"> See the site</a>
+<a href="https://netflix-br.netlify.app/"> See the site</a>
 </h1>
